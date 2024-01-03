@@ -1,0 +1,76 @@
+body{
+    font-size: 20pt;
+    background-color: blue;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.664);
+    color: white;
+    padding: 20px;
+    margin: -10px;
+    text-align: center;
+}
+
+nav{
+    background-color: rgba(245, 245, 220, 0.705);
+    color: black;
+}
+
+a{
+    padding: 20px;
+    border: solid 1px black;
+    background-color: rgba(0, 0, 0, 0.144);
+    font-size: 25pt;
+}
+
+main{
+    background-color: rgba(0, 0, 0, 0.726);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    
+    border-style: ridge;
+    border-width: 10px;
+    border-color: rgb(63, 62, 62);
+    
+    /*
+    border: groove 20px red;
+    */
+
+    box-shadow: 10px 10px 10px rgb(51, 51, 51);
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.473);
+    color: white;
+    padding: 20px;
+    margin: -10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+section{
+    text-align: center;
+}
+
+#n1{
+    width: 300px;
+    height: 200px;
+    background-image: url(carro.jpg);
+    background-size: cover;
+    color: black;
+    margin: 10px;
+    display: inline-block;
+
+}
+
+#n2{
+    width: 300px;
+    height: 200px;
+    background-image: url(moto.jpg);
+    background-size: cover;
+    color: black;
+    margin: 10px;
+    display: inline-block;
+}

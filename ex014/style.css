@@ -1,0 +1,78 @@
+body{
+    font-size: 20pt;
+    background-image: url(fundo\ 2.png);
+    color: white;
+    margin: 0px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+header{
+    background-image: url(cabeçario.jpg);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+
+    border: 20px ridge rgb(14, 32, 19);
+}
+
+nav{
+    background-color: rgba(255, 255, 255, 0.671);
+    padding: 10px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 60px;
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.171);
+    
+    
+    color: black;
+    padding: 20px;
+    margin: 10px;
+
+    border: 20px groove rgb(59, 102, 59);
+}
+
+section{
+    background-color: rgba(17, 110, 37, 0.685);
+    padding: 10px;
+    margin: 20px;
+    font-weight: bold;
+    color: white;
+    border: 20px double black;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.555);
+}
+
+footer{
+    background-color: blue;
+    padding: 10px;
+    text-align: center;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    margin: auto;
+}
+
+span{
+    background-color: black;
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    margin-top: -30px;
+    position: relative;
+}

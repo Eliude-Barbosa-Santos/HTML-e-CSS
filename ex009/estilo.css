@@ -1,0 +1,36 @@
+body{
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+div{
+    background: gray;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+img#index{
+    width: 200px;
+    height: 200px;
+}
+
+footer{
+    margin-top: 30px;
+}
+
+#voltar{
+    background: white;
+    width: 500px;
+    height: 100px;
+    line-height: 100px;
+}
+
+video{
+    width: 500px;
+    height: 400px;
+}

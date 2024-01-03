@@ -1,0 +1,36 @@
+body{
+    font-size: 18pt;
+}
+
+#principal{
+    background-color: black;
+    color: white;
+}
+
+.ba{
+    text-align: center;
+    background-color: gray;
+
+}
+
+.inter{
+    background-color: aqua;
+    text-align: center;
+}
+
+.ava{
+    background-color: blue;
+    color: bisque;
+    text-align: center;
+}
+
+.destaque{
+    background-color: rgba(255, 255, 0, 0.466);
+}
+
+/*
+# --> id --> IDs com o mesmo nome so podem ser usadas uma vez dentro de uma pagina
+
+. --> class --> CLASS com o mesmo mesmo nome podem ser usadas em varios elementos dentro da mesma pagina
+
+*/

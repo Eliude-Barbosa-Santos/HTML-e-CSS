@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAIXAS</title>
+    <link rel="shortcut icon" href="bxl-dribbble-icon.png" type="image/x-icon">
+
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-size: 20pt;
+        }
+
+        .primeiro{
+            background-color: rgba(128, 128, 128, 0.445);
+            color: rgb(240, 239, 239);
+            padding: 30px;
+            width: 400px;
+            border: 20px solid rgb(177, 7, 7);
+        }
+
+        .segundo{
+            background-color: rgba(255, 255, 0, 0.966);
+            padding: 20px;
+            border: 10px solid blue;
+            box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.432);
+            color: black;
+            font-weight: bold;
+            display: none;
+        }
+
+        .primeiro:hover > div{
+            display: block;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <h1>CAIXAS</h1>
+    <h2>BOX-LEVEL</h2>
+    <ul>
+        <li>Sempre se inicia em uma nova linha</li>
+        <li>Ocupa a largura inteira da tela</li>
+        <li>Faz a quebra de linha no final, antes de começar outro conteúdo</li>
+    </ul>
+
+
+    <div class="primeiro">
+        <h3>Exemplos de uma Box-Level</h3>
+        <div  class="segundo">
+            <ul>
+                <li> &lt;div&gt;</li>
+                <li> &lt;p&gt;</li>
+                <li> &lt;h1 - h6&gt;</li>
+                <li> &lt;header&gt;</li>
+                <li> &lt;footer&gt;</li>
+                <li> &lt;video&gt;</li>
+                <li> &lt;section&gt;</li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <h2>INLINE-LEVEL</h2>
+    <ol type="a">
+        <li>Continua na mesma linha</li>
+        <li>Não ocupa a largura inteira da tela</li>
+        <li>Não faz a quebra de linha no final</li>
+    </ol>
+
+
+    <div class="primeiro">
+        <h3>Exemplos Inline-Level</h3>
+        <div  class="segundo">
+            <ul>
+                <li> &lt;span&gt;</li>
+                <li> &lt;a&gt;</li>
+                <li> &lt;code&gt;</li>
+                <li> &lt;small&gt;</li>
+                <li> &lt;strong&gt;</li>
+                <li> &lt;input&gt;</li>
+                <li> &lt;sup e sub&gt;</li>
+                <li> &lt;em&gt;</li>
+
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    
+</body>
+</html>

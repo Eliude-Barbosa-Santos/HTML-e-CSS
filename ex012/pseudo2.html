@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEUDO</title>
+
+    <link rel="shortcut icon" href="Crocodile-icon.png" type="image/x-icon">
+
+    <style>
+        body{
+            font-size: 18pt;
+        }
+
+        div{
+            background-color: black;
+            color: rgb(255, 255, 255);
+            width: 400px;
+
+            padding: 30px;
+
+            border-radius: 80px 0px;
+        }
+
+       div > p{
+        margin-left: 80px;
+        display: none;
+
+       }
+
+       div:hover{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+       }
+
+       div:hover > p{
+        display: block;
+       }
+
+        a{
+            text-decoration: none;
+            font-weight: bold;
+        }      
+
+        a:visited{
+            color: red;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            background-color: aqua;
+        }
+
+        a:active{
+            background-color: black;
+            color: white;
+        }
+
+        a::after{
+            content: " [link]";
+            font-size: 10pt;
+            color: gray;
+        }
+
+        #primeiro::before{
+            content: ">> ";
+            font-weight: bold;
+            font-size: 25pt;
+            color: green;
+        }
+        
+        
+
+       /*
+
+        # --> ID
+        . --> CLASS
+        : --> PSEUDO-CLASSE
+        :: --> PSEUDO-ELEMENTO
+        > --> FILHO DE UM ELEMENTO
+
+        :HOVER --> quando o cursor fluntuar sobre algo
+
+        :VISITED --> Mudar a configuração de um link já visitado
+
+        :ACTIVE --> Mudar a configuração quando clicar e segurar em um link
+
+        ::AFTER --> Acrescentar alguma coisa depois de algum elemento
+
+        ::BEFORE --> Acrescentar alguma coisa antes de algum elemento
+
+       */
+
+       
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Textos escondidos</h1>
+
+    <p>INICIO</p>
+
+    <div>
+        Passe o mouse para mostrar os links
+
+    <p>Link 1: <a href="https://www.uol.com.br/" target="_blank" id="primeiro">UOL</a></p>
+
+    <p>Link 2: <a href="https://g1.globo.com/mundo/" target="_blank">G1 Mundo</a></p>
+
+    <p>Link 3: <a href="https://ge.globo.com/" target="_blank">Globo Esporte</a></p>
+    
+    </div>
+
+    <p>FIM</p>
+</body>
+</html>

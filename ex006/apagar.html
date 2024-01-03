@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Green-3-Robot-Avatar-icon.png" type="image/x-icon">
+    <title>DETRAN</title>
+
+    <style>
+        div#res{
+            background-color: black;
+            color: white;
+            width: 285px;
+            height: 100px;
+            text-align: center;
+            font: 25pt arial;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <input type="number" name="txtvel" id="txtvel">
+    <strong>km/h</strong>
+    <input type="button" value="Verificar" onclick="calcular()">
+    <p>
+        <div id="res">SITUÇÃO</div> 
+    </p>
+
+    <script>
+        function calcular() {
+            var txtvel = window.document.querySelector('input#txtvel')
+
+            var vel = Number(txtvel.value)
+
+            var div = window.document.querySelector('div#res')
+
+            if (vel > 60){
+                div.innerHTML = "MULTADO"
+                div.style.color = "black"
+                div.style.backgroundColor = 'red'
+            }else{
+                div.innerHTML = "Dirija com cuidado"
+                div.style.color = "black"
+                div.style.backgroundColor = 'lime'
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>

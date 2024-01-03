@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto escondido</title>
+    <style>
+        body{
+            font-size: 20pt;
+        }
+
+        .menu{
+           background-color: black;
+           color: white;
+           text-align: center;
+           padding: 20px;
+           border-radius: 100px 0px 100px 0px;
+           width: 400px;
+           box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.377);
+        }
+
+        div > p{
+            display: none;
+            margin-left: 100px;
+        }
+
+        div:hover > p{
+            display: block;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: red;
+
+        }
+
+        a:hover{
+            text-decoration: underline;
+            background-color: blue;
+            color: black;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        .principal::after{
+            content: " [link]";
+            text-decoration: none;
+            font-weight: normal;
+            color: lightgray;
+            font-size: 10pt;
+        }
+
+        .principal::before{
+            content: "(site) ";
+            color: yellow;
+            font-size: 10pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Textos escondidos</h1>
+    <p>Usando o pseudo-classe hover</p>   
+
+    <div class="menu">
+        Passe o mouse aqui
+        <p>link um: <a href="https://www.youtube.com/" target="_blank">Youtube</a></p>
+        <p>link dois: <a href="https://www.google.com.br/" target="_blank" class="principal">google</a></p>
+        <p>link tres: <a href="https://www.uol.com.br/" target="_blank">uol</a></p>
+    </div>
+</body>
+</html>
