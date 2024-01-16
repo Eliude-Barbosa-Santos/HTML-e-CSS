@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizar Verticalmente</title>
+    <link rel="shortcut icon" href="imagens/icons8-liverpool-fc-48.png" type="image/x-icon">
+
+    <style>
+        body{
+            height: 100vh;
+            background-color: rgb(65, 58, 58);
+        }
+
+        #container{
+            background-color: rgb(243, 6, 6);
+            max-width: 300px;
+            height: 300px;
+            margin: auto;
+            position: relative;
+            border: 2px solid black;
+            margin-top: 50px;
+
+            border-radius: 100%;
+        }
+
+        #conteudo{
+            background-color: black;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+
+            border-radius: 100%;
+
+        }
+
+        #teste{
+            background-color: rgb(255, 255, 255);
+            background-image: url(imagens/icons8-liverpool-fc-48.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 80% 80%;
+            width: 100px;
+            height: 100px;
+
+            position: absolute;
+            
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+
+            border-radius: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <article id="conteudo">
+            <article id="teste">
+
+            </article>
+        </article>
+    </section>
+</body>
+</html>
