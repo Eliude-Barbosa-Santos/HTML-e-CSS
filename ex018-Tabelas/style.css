@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    min-height: 100vw;
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+    margin: 10px 0px;
+
+    background-color: aqua;
+}
+
+main{
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    background-color: blue;
+    color: white;
+}
+
+table{
+    border: 10px solid white;
+    border-collapse: collapse;
+    width: 400px;
+    font-size: 2em;
+}
+
+td{
+    border: 2px solid white;
+    padding: 10px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
