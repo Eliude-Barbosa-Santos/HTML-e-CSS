@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Pessoal</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        li{
+            font-weight: bolder;
+        }
+
+        table{
+            border-collapse: collapse;
+            font-size: 20px;
+        }
+
+        td{
+            border: 2px solid black;
+            width: 200px;
+            height: 100px;
+
+            text-align: center;
+        }
+
+        tr{
+            color: black;
+            font-weight: bolder;
+        }
+
+        tr#linha1{
+            background-color: gray;
+        }
+
+        tr#linha2{
+            background-color: aqua;
+        }
+
+        tr#linha3{
+            background-color: brown;
+        }
+
+        tr#linha4{
+            background-color: yellow;
+        }
+
+        #col2{
+            background-image: url(imagem/agua.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            vertical-align: bottom;
+            text-align: right;
+
+            color: white;
+        }
+
+        #col5{
+            background-image: url(imagem/ar.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+
+            vertical-align: bottom;
+            text-align: right;
+
+            color: white;
+        }
+
+        #col8{
+            background-image: url(imagem/fogo.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            vertical-align: bottom;
+            text-align: right;
+
+            color: white;
+        }
+
+        #col11{
+            background-image: url(imagem/terra.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            vertical-align: bottom;
+            text-align: right;
+
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabela Simples</h1>
+    <ol type="I">
+        <li>Criar uma tabela 4x3</li>
+        <li>Configurar Bordas</li>
+        <li>Colorir cada linha de uma cor</li>
+        <li>Colocar imagem na coluna 2</li>
+        <li>Centralizar elementos</li>
+        <li>Colocar elementos na coluna do meio em baixo a direita</li>
+    </ol>
+    <table>
+        <tr id="linha1">
+            <td>1</td>
+            <td id="col2">2</td>
+            <td>3</td>
+        </tr>
+        <tr id="linha2">
+            <td>4</td>
+            <td id="col5">5</td>
+            <td>6</td>
+        </tr>
+        <tr id="linha3">
+            <td>7</td>
+            <td id="col8">8</td>
+            <td>9</td>
+        </tr>
+        <tr id="linha4">
+            <td>10</td>
+            <td id="col11">11</td>
+            <td>12</td>
+        </tr>
+    </table>
+</body>
+</html>
