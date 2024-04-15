@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+
+        table{
+            background-color: aqua;
+            color: black;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        td, th{
+            border: 2px solid black;
+            padding: 10px;
+            width: 100px;
+        }
+
+        th{
+            background-color: gray;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Desafio 4</h1>
+    <table>
+        <thead>
+            <tr> <!--Linha 1-->
+                <th scope="col">Grupo</th>
+                <th scope="col">Nome</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr><!--Linha 2-->
+                <th scope="rowgroup" rowspan="3">Mulher</th>
+                <td>Ana</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+
+            <tr> <!--Linha 3-->
+                <td>Bia</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+
+            <tr>
+                <td>Diogo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homem</th>
+                <td>Bruno</td>
+                <td>Intocaveis</td>
+                <td>Aminésia</td>
+                <td>Gladiador</td>
+            </tr>
+
+            <tr>
+                <td>Dany</td>
+                <td>Wall-E</td>
+                <td>OldBoys</td>
+                <td>Hitman</td>
+            </tr>
+
+            <tr>
+                <td>Fabi</td>
+                <td>StarWar</td>
+                <td>Taxi</td>
+                <td>Toy Story</td>
+            </tr>
+
+            <tfoot>
+                <th scope="row" colspan="4">Total</th>
+                <td>1000</td>
+            </tfoot>
+
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
