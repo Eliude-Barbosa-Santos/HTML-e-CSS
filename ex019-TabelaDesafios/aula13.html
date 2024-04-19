@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 13</title>
+
+    <link rel="shortcut icon" href="Crocodile-icon.png" type="image/x-icon">
+
+    <style>
+        body{
+            background-color: rgb(7, 7, 7);
+            text-align: center;
+        }
+
+        h1{
+            color: blue;
+        }
+
+        ul{
+            color: white;
+            text-align: left;
+        }
+
+        #lista{
+            margin: auto;
+            width: 400px;
+        }
+
+        table{
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        caption{
+            padding: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.9em;
+            background-color: rgba(3, 3, 3, 0.651);
+            font-weight: bold;
+            border-top: 4px solid white;
+            border-right: 4px solid white;
+            border-left: 4px solid white;
+           
+        }
+
+        td, th{
+            padding: 15px;
+            border: 4px solid white;
+        }
+
+        .primeira{
+            background-color: rgb(15, 61, 1);
+        }
+
+        .meio{
+            background-color: rgb(2, 2, 75);
+        }
+
+        .ultima{
+            background-color: rgb(100, 2, 2);
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Configurando Colunas</h1>
+    <div id="lista">
+        <ul>
+            <li>Criar tabela da aula 13</li>
+            <li>Colocar primeira e ultima coluna de cores diferente</li>
+            <li>Colocar segunda e terceira coluna da mesma cor</li>
+        </ul>
+    </div>
+    <table>
+        <colgroup>
+            <col class="primeira">
+            <col class="meio" span="2">
+            <col class="ultima">
+        </colgroup>
+        <caption>
+            CADASTRO
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Claudio</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>49</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Vendedor</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>39</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Otávio</td>
+                <td>M</td>
+                <td>27</td>
+                <td>Nutri</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
