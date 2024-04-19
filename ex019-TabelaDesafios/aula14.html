@@ -17,8 +17,17 @@
             background-color: aqua;
             color: black;
             border-collapse: collapse;
-            margin: auto;
+            width: 500px;
+
+            position: relative;
             
+            
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: black;
         }
 
         td{
@@ -31,7 +40,14 @@
             padding: 10px;
             background-color: black;
             color: white;
+            
         }
+
+        tr:nth-child(2n){
+            background-color: gray;
+        }
+
+        
 
         #produtos{
             background-color: gray;
@@ -40,152 +56,362 @@
         #primeiralinha{
             background-color: gray;
         }
+
+        #tabela{
+          overflow-x: auto;
+            
+        }
     </style>
 </head>
 <body>
     <h1>Tabela Responsiva</h1>
-    <table>
+   
+        <table>
+            <colgroup>
+                <col id="produtos">
+            </colgroup>
+            <caption>
+                Venda de Produtos
+            </caption>
+            <thead>
+                <tr id="primeiralinha">
+                    <th scope="col" >Produtos</th>
+                    <th scope="col">Jan</th>
+                    <th scope="col">Fev</th>
+                    <th scope="col">Mar</th>
+                    <th scope="col">Abr</th>
+                    <th scope="col">Mai</th>
+                    <th scope="col">Jun</th>
+                    <th scope="col">Jul</th>
+                    <th scope="col">Ago</th>
+                    <th scope="col">Set</th>
+                    <th scope="col">Out</th>
+                    <th scope="col">Nov</th>
+                    <th scope="col">Dez</th>
+                </tr>
+            </thead>
+            <div id="tabela">
+                <tbody>
+                    <tr>
+                        <th scope="row">Sabão</th>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Detergente</th>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Candida</th>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Amaciante</th>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Aerosol</th>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Bom Bril</th>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sapolio</th>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sabão</th>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Detergente</th>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Candida</th>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Amaciante</th>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Aerosol</th>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Bom Bril</th>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sapolio</th>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sabão</th>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Detergente</th>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Candida</th>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Amaciante</th>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Aerosol</th>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Bom Bril</th>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sapolio</th>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                        <td>22</td>
+                        <td>37</td>
+                        <td>43</td>
+                        <td>67</td>
+                        <td>55</td>
+                        <td>51</td>
+                    </tr>
+                </tbody>
+            </div>
+        </table>
+   
 
-        <colgroup>
-            <col id="produtos">
-        </colgroup>
-        <caption>
-            Venda de Produtos
-        </caption>
-
-        <thead>
-            <tr id="primeiralinha">
-                <th scope="col" >Produtos</th>
-                <th scope="col">Jan</th>
-                <th scope="col">Fev</th>
-                <th scope="col">Mar</th>
-                <th scope="col">Abr</th>
-                <th scope="col">Mai</th>
-                <th scope="col">Jun</th>
-                <th scope="col">Jul</th>
-                <th scope="col">Ago</th>
-                <th scope="col">Set</th>
-                <th scope="col">Out</th>
-                <th scope="col">Nov</th>
-                <th scope="col">Dez</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <th scope="row">Sabão</th>
-                <td>22</td>
-                <td>37</td>
-                <td>43</td>
-                <td>67</td>
-                <td>55</td>
-                <td>51</td>
-                <td>22</td>
-                <td>37</td>
-                <td>43</td>
-                <td>67</td>
-                <td>55</td>
-                <td>51</td>
-            </tr>
-
-            <tr>
-                <th scope="row">Detergente</th>
-                <td>51</td>
-                <td>22</td>
-                <td>37</td>
-                <td>43</td>
-                <td>67</td>
-                <td>55</td>
-                <td>51</td>
-                <td>37</td>
-                <td>43</td>
-                <td>67</td>
-                <td>55</td>
-                <td>51</td>
-            </tr>
-
-            <tr>
-                <th scope="row">Candida</th>
-                <td>22</td>
-                <td>37</td>
-                <td>43</td>
-                <td>67</td>
-                <td>55</td>
-                <td>51</td>
-                <td>22</td>
-                <td>37</td>
-                <td>43</td>
-                <td>67</td>
-                <td>55</td>
-                <td>51</td>
-            </tr>
-
-            <tr>
-                <th scope="row">Amaciante</th>
-                <td>22</td>
-                <td>37</td>
-                <td>43</td>
-                <td>67</td>
-                <td>55</td>
-                <td>51</td>
-                <td>22</td>
-                <td>37</td>
-                <td>43</td>
-                <td>67</td>
-                <td>55</td>
-                <td>51</td>
-            </tr>
-
-            <tr>
-                <th scope="row">Aerosol</th>
-                <td>22</td>
-                <td>37</td>
-                <td>43</td>
-                <td>67</td>
-                <td>55</td>
-                <td>51</td>
-                <td>22</td>
-                <td>37</td>
-                <td>43</td>
-                <td>67</td>
-                <td>55</td>
-                <td>51</td>
-            </tr>
-
-            <tr>
-                <th scope="row">Bom Bril</th>
-                <td>22</td>
-                <td>37</td>
-                <td>43</td>
-                <td>67</td>
-                <td>55</td>
-                <td>51</td>
-                <td>22</td>
-                <td>37</td>
-                <td>43</td>
-                <td>67</td>
-                <td>55</td>
-                <td>51</td>
-            </tr>
-
-            <tr>
-                <th scope="row">Sapolio</th>
-                <td>22</td>
-                <td>37</td>
-                <td>43</td>
-                <td>67</td>
-                <td>55</td>
-                <td>51</td>
-                <td>22</td>
-                <td>37</td>
-                <td>43</td>
-                <td>67</td>
-                <td>55</td>
-                <td>51</td>
-            </tr>
-
-            
-        </tbody>
-    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia culpa mollitia enim necessitatibus minima nam, non adipisci quas reiciendis facere facilis error temporibus, hic optio similique ut rem labore eum ipsam molestias voluptate corporis architecto quis? Dolores quis ratione veritatis dolorum, provident nisi cumque quod! Qui enim quisquam voluptatem praesentium recusandae suscipit illo perferendis possimus in blanditiis esse reprehenderit et nemo repudiandae, vero maxime dignissimos cumque molestiae. Eveniet, eligendi quidem hic doloremque ut culpa consequatur, aperiam et non eius laboriosam odio, neque reiciendis voluptates quod atque cumque. Possimus officiis natus, harum amet dicta perspiciatis animi modi neque quisquam quibusdam pariatur autem ut itaque delectus maxime tenetur nisi ex inventore commodi quasi eaque! Et, placeat nostrum similique impedit ipsum nemo culpa itaque distinctio consectetur veniam ab id tenetur eius dolores rerum aperiam qui quia, nulla voluptatum, exercitationem atque dolorum ipsam aut fugit. Molestiae, recusandae. Expedita sint cumque non consectetur ex sequi magnam numquam saepe tempora quibusdam. Omnis sint atque ab consequatur sequi ipsum voluptates repellendus dolores quis consequuntur vero, praesentium ullam animi quo deserunt at, facere voluptatum. Natus expedita maiores illum rerum unde voluptates iste ad explicabo placeat inventore, consectetur ab incidunt, voluptatem laborum, corrupti molestiae repellendus blanditiis? Temporibus, non incidunt, quaerat minus beatae fugit deleniti alias possimus aperiam, tempore at dolor facere id! Quidem nam deleniti atque ipsa mollitia iusto molestiae itaque obcaecati recusandae nemo officiis blanditiis, hic voluptatibus veniam esse tempora totam cumque. Quia debitis fugit qui voluptatibus, expedita consectetur magni a voluptatem dolore consequuntur sed temporibus dolorem adipisci nisi doloribus ut optio esse est! Error aliquid veniam, eius voluptates ratione amet ad facere perferendis, quasi sequi voluptatem quo nisi accusamus molestiae consectetur exercitationem ipsum porro possimus. Aliquam exercitationem repellendus sit, quo magni expedita tempora nihil dicta dolorem culpa, quisquam cumque non laboriosam repellat in ducimus eaque a provident eligendi aliquid omnis fuga? Ad dolorum dolor suscipit, sed nam ipsum quasi nemo rem est officia debitis voluptatum quas excepturi ab earum delectus odit, deleniti alias laudantium natus tenetur eius harum perspiciatis veritatis. Ut doloribus reiciendis temporibus debitis voluptate earum mollitia doloremque porro quaerat quisquam, consequuntur obcaecati a culpa quia dicta nulla voluptas facere assumenda tenetur rerum quos. Hic nostrum assumenda eum, laudantium ab repudiandae quam vel vero doloribus beatae reiciendis libero autem quidem ipsam debitis quisquam. Dolores blanditiis consequuntur temporibus, numquam sint accusamus. Magnam repudiandae nesciunt officia, atque consectetur voluptatum odio, hic sunt ipsum delectus maxime placeat eveniet! Doloremque minus explicabo quis autem libero impedit et deleniti commodi consequuntur repellendus ut ipsa, consequatur ad sit at nobis sequi dolorem qui enim consectetur labore. Minus aliquid deserunt odit velit explicabo reprehenderit commodi tempore optio repudiandae voluptatibus nostrum modi molestias earum libero nesciunt accusamus ipsa minima, illo facere neque, est provident. Sed ipsam sapiente eum maxime atque unde, sunt ullam quia doloribus non dolor commodi quidem quasi, doloremque quas numquam inventore, libero quos laborum quaerat reiciendis nulla? At, vero rem? Quam, aspernatur voluptatibus repellendus placeat quae, voluptates ratione sed cum earum voluptas illum harum, quisquam dolorum? Rem delectus laborum error.</p>
 </body>
 </html>
