@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07</title>
+    <link rel="shortcut icon" href="Crocodile-icon.png" type="image/x-icon">
+
+    <style>
+
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            background-color: aquamarine;
+        }
+        table{
+            border-collapse: collapse;
+            border: 4px solid black;
+            margin: auto;
+            background-color: white;
+
+            position: relative;
+        }
+
+
+
+        td, th{
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+           
+        }
+
+        tr#titulo{
+            background-color: black;
+            color: white;
+
+            position: sticky;
+            top: -2px;
+        }
+
+        tr:nth-child(2n){
+            background-color: gray;
+        }
+
+        caption{
+            padding: 20px;
+            background-color: gray;
+            font-weight: bold;
+            border-top: 4px solid black;
+            border-left:  4px solid black;
+            border-right: 4px solid black;
+        }
+
+        tfoot{
+            background-color: black;
+            color: white;
+        }
+
+        #unico{
+            background-color: gray;
+            color:black;
+        }
+
+        #container{
+            overflow-x: auto;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio</h1>
+    <p>Treinar overflow-x e position</p>
+
+    
+    <div id="container">
+            <table>
+                <caption>
+                    TABELA DE MESES
+                </caption>
+                <thead>
+                    <tr id="titulo">
+                        <th scope="col">Pessoas</th>
+                        <th scope="col">Jan</th>
+                        <th scope="col">Fev</th>
+                        <th scope="col">Mar</th>
+                        <th scope="col">Abr</th>
+                        <th scope="col">Mai</th>
+                        <th scope="col">Jun</th>
+                        <th scope="col">Jul</th>
+                        <th scope="col">Ago</th>
+                        <th scope="col">Set</th>
+                        <th scope="col">Out</th>
+                        <th scope="col">Nov</th>
+                        <th scope="col">Dez</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th scope="row" id="unico">Ultimo</th>
+                        <td colspan="12">Fim da Hitoria</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Andreia</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+</body>
+</html>
