@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 8</title>
+</head>
+<body>
+    <h1>Formulário 8</h1>
+
+    <form action="..." method="post">
+        <fieldset>
+            <legend>Soma</legend>
+            <p>
+                <label for="in1">Numero: </label>
+                <input type="number" name="n1" id="in1" oninput="isoma.innerHTML=Number(in1.value)+Number(in2.value)" step="100">
+            </p>
+            <p>
+                <label for="in2">Numero: </label>
+                <input type="number" name="n2" id="in2" oninput="isoma.innerHTML=Number(in1.value)+Number(in2.value)" step="200">
+            </p>
+
+            <p>
+                <label for="isoma">Soma: </label>
+                <output id="isoma">0</output>
+            </p>
+
+
+
+        </fieldset>
+<br>
+        <fieldset>
+            <legend>Range</legend>
+
+            <p>
+                <label for="irange">Numero: </label>
+                <input type="range" name="range" id="irange" min="0" max="1000" value="0" oninput="saida.innerHTML=Number(irange.value)">
+                <output id="saida">0</output>
+            </p>
+        </fieldset>
+
+
+
+
+    </form>
+</body>
+</html>
