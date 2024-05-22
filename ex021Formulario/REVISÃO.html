@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolinha Redonda</title>
+    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="revisao/tela.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Alunos</h1>
+    </header>
+
+    <main>
+        <form action="..." method="post" autocomplete="off">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <div>
+                    <label for="iname">Nome: </label>
+                    <input type="text" name="name" id="iname">
+                </div>
+                <div>
+                    <label for="isobrenome">Sobrenome: </label>
+                    <input type="text" name="sobrenome" id="isobrenome">
+                </div>
+                <div>
+                    <label for="iemail">E-mail: </label>
+                    <input type="email" name="email" id="iemail">
+                </div>
+                <div>
+                    <label for="itel">Telefone: </label>
+                    <input type="tel" name="tel" id="itel">
+                </div>
+                <div>
+                    <p>
+                        Sexo:
+                        <label for="sex">MEN </label>
+                        <input type="radio" name="sex" id="men">
+                        <label for="sex">FEM</label>
+                        <input type="radio" name="sex" id="fem">
+                    </p>
+                </div>
+                <div>
+                    <label for="inasc">Data de nascimento: </label>
+                    <input type="date" name="nascimento" id="inasc">
+                </div>
+                <div>
+                    <label for="ialtura">Altura: </label>
+                    <input type="number" name="altura" id="ialtura">
+                </div>
+                <div>
+                    <label for="ilog">Login: </label>
+                    <input type="text" name="log" id="ilog">
+                </div>
+                <div>
+                    <label for="isenha">Senha: </label>
+                    <input type="password" name="senha" id="isenha">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações Complementares</legend>
+                <div>
+                    <label for="ifoto">Foto: </label>
+                    <input type="file" name="foto" id="ifoto">
+                </div>
+                <div>
+                    <label for="icor">Cor da Carteirinha: </label>
+                    <input type="color" name="cor" id="icor">
+                </div>
+                <div>
+                    <label for="imoda">Modalidade: </label>
+                    <select name="moda" id="imoda">
+                        <option value="">Salão</option>
+                        <option value="">Campo</option>
+                        <option value="">Society</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="itime">Time do Coração: </label>
+                    <input type="text" name="time" id="itime" list="lista">
+                    <datalist id="lista">
+                        <option value="São Paulo"></option>
+                        <option value="Corinthias"></option>
+                        <option value="Santos"></option>
+                        <option value="Palmeiras"></option>
+                    </datalist>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferências</legend>
+                <div>
+                    <label for="imes">Mês do Cadastro: </label>
+                    <input type="month" name="mes" id="imes">
+                </div>
+
+                <div>
+                    Disponibilidade: <br>
+                    <input type="checkbox" name="dis" id="segunda">
+                    <label for="segunda">Segunda</label><br>
+
+                    <input type="checkbox" name="" id="quarta">
+                    <label for="quarta">quarta</label><br>
+
+                    <input type="checkbox" name="" id="sexta">
+                    <label for="sexta">Sexta</label>
+                    
+                </div>
+
+                <div>
+                    Horário Livre: <br>
+                    <label for="ide">De: </label>
+                    <input type="time" name="hora" id="ide"><br>
+                    <label for="ite">Até: </label>
+                    <input type="time" name="ate" id="iate">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Finalizando</legend>
+
+                <div>
+                    <label for="isatis">Nivel de Satisfação: </label>
+                    <input type="range" name="satis" id="isatis">
+                </div>
+
+                <div>
+                    <label for="area">Algum comentário: </label> <br>
+                    <textarea name="area" id="area" cols="40" rows="10"></textarea>
+                </div>
+            </fieldset>
+
+
+
+
+
+
+        </form>
+    </main>
+
+    <footer>
+        <h2>Obrigado pelo Cadastro</h2>
+        <p>Entraremos em contato</p>
+    </footer>
+</body>
+</html>
