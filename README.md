@@ -9,3 +9,5 @@
 
 <a href="https://eliudebsantos.github.io/HTML-e-CSS/ex017-TrabalhandoImagens/fundo004"> Aula 017 - fundo004 </a>
 
+<a href="https://eliudebsantos.github.io/HTML-e-CSS/ex023-MediaQueries/mediaQueries002"> Aula Media Queries </a>
+
