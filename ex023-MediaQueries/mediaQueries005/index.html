@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries 5</title>
+    <link rel="stylesheet" href="estilo/style.css">
+   <link rel="stylesheet" href="estilo/grande.css" media="screen and (min-width: 700px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+</head>
+<body onresize="abrir()">
+
+    <header>
+        <h1>Menu Hamburguer</h1>
+        <span class="material-symbols-outlined" id="nav" onclick="burguer()">menu</span>
+        <menu id="teste">
+            <ul >
+                <li><a href="#">Primeiro</a></li>
+                <li><a href="#">Segundo</a></li>
+                <li><a href="#">Terceiro</a></li>
+                <li><a href="#">Quarto</a></li>
+                <li><a href="#">Quinto</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Texto Aleatório</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aut ab fugiat ea ratione. Odio blanditiis sunt dolores sequi et, aliquid inventore asperiores laborum iste quaerat suscipit maxime nobis dignissimos facilis, error, sapiente fuga eligendi veritatis ipsam earum animi. Illum incidunt officiis expedita numquam earum quasi voluptas voluptatum, velit, mollitia accusantium sapiente id modi deleniti quisquam placeat fugiat? Voluptatibus, quod ipsum quia fuga alias expedita accusamus facere rerum incidunt? Facere dolor sunt facilis, fugiat voluptatum ratione architecto officia maxime? Exercitationem soluta labore nihil. Nemo consectetur alias quas quia totam, pariatur perspiciatis aut, voluptate quos voluptas omnis assumenda consequatur esse explicabo, tenetur ipsam consequuntur. Veniam aliquid iure illo sunt nobis quas voluptates nisi eaque molestias. Unde eaque quisquam nemo ipsa quos.</p>
+        </article>
+    </main>
+
+    <script>
+        function burguer(){
+            if(teste.style.display == "block"){
+                teste.style.display = "none"
+            }else{
+                teste.style.display = "block"
+            }
+        }
+
+        function abrir() {
+            if(window.innerWidth >= 760){
+                teste.style.display = "block"
+            }else{
+                teste.style.display = 'none'
+            }
+        }
+    </script>
+    
+</body>
+</html>

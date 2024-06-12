@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body{
+    background-color: black;
+}
+
+#nav{
+
+    display: none;
+}
+
+menu{
+    display: block;
+}
+
+li{
+    display: inline-block;
+    margin-left: 10px;
+}
+main{
+    width: 700px;
+}
